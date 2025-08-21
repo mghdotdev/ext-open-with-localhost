@@ -1,0 +1,58 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "JetBrainsMono Nerd Font", "Source Code Pro", monospace;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background-color: #BDC3C7;
+	padding: 4px 8px;
+	text-align: center;
+}
+
+.htag {
+	font-size: 18px;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.form {
+	margin: 0;
+	padding: 4px 8px;
+}
+
+.form-group {
+	border: none;
+	margin-bottom: 4px;
+}
+
+.label {
+	display: block;
+}
+
+.input {
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 2;
+	width: 100%;
+}
+
+.button {
+	background-color: #2980B9;
+	border: none;
+	border-radius: 5px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	line-height: 2;
+	width: 100%;
+}

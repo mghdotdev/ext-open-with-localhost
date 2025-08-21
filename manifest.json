@@ -1,0 +1,13 @@
+{
+	"name": "Open with Localhost",
+	"description": "Open the currently active tab's url with localhost. Use settings to specify which port to use.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"permissions": [
+		"activeTab"
+	],
+	"action": {
+		"default_popup": "src/popup.html",
+		"default_icon": "src/icon.png"
+	}
+}
