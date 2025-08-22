@@ -25,11 +25,19 @@ const go = async (port = 3000, newtab = true) => {
 			const localhostUrl = url.href.replace(url.host, `localhost:${port}`);
 
 			if (newtab) {
-				chrome.tabs.create({
-					active: true,
+				const createdTab = await chrome.tabs.create({
+					active: false,
 					openerTabId: tab.id,
-					url: localhostUrl
+					url: localhostUrl,
+					windowId: tab.windowId
 				});
+
+				if (createdTab && tab.groupId) {
+					chrome.tabs.group({
+						groupId: tab.groupId,
+						tabIds: createdTab.id
+					});
+				}
 
 				return true;
 			}
