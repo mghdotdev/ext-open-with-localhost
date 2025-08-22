@@ -21,7 +21,7 @@ const go = async (port = 3000, newtab = true) => {
 	if (tab?.url && tab?.url.startsWith('http')) {
 		const url = new URL(tab.url);
 
-		if (url.hostname !== 'localhost' && url.port !== port) {
+		if (url.hostname !== 'localhost' || url.port !== port) {
 			const localhostUrl = url.href.replace(url.host, `localhost:${port}`);
 
 			if (newtab) {
