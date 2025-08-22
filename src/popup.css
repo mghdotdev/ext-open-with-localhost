@@ -57,3 +57,8 @@ body {
 	line-height: 2;
 	width: 100%;
 }
+
+.message-container {
+	color: #E74C3C;
+	font-size: 12px;
+}
